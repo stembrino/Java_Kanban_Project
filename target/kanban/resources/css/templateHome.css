@@ -1,0 +1,42 @@
+@import url(https://weloveiconfonts.com/api/?family=zocial);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 100%;
+	height: 100vh;
+	width: 100%;
+}
+
+.container-geral {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.side-bar {
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	width: 18%;
+	box-shadow: 0 0 3px 2px #00000059; 
+	background-color : #0000004a;
+	z-index: 1000;
+	background-color: #0000004a;
+}
+
+.btn-hide-sidebar {
+	background-color: #f9f9f9;
+	position: relative;
+	height: 34px;
+	border-bottom-right-radius: 10px;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}

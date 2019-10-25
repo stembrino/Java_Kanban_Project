@@ -1,0 +1,34 @@
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="./templates/main.xhtml">
+	<!-- import -->
+	<ui:define name="import">
+		<h:outputScript library="js" name="sidebar.js"/>
+	</ui:define>
+
+	<!-- navbar -->
+	<ui:define name="header">
+		<div class="nav-bar"></div>
+	</ui:define>
+
+	<!-- main content -->
+	<ui:define name="main">
+		<div class="container-geral">
+			<div id="SideBar" class="side-bar">
+				<div class="opcoes">
+					<div id="BtnSideBar" class="btn-hide-sidebar"></div>
+					<div class="opc"></div>
+				</div>
+
+			</div>
+		</div>
+	</ui:define>
+
+	<!-- footer -->
+	<ui:define name="footer">
+
+	</ui:define>
+
+
+
+</ui:composition>

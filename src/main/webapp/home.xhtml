@@ -1,0 +1,49 @@
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="./templates/main.xhtml">
+	<!-- import -->
+	<ui:define name="import">
+		<h:outputScript library="jquery" name="jquery.js" />
+
+		<h:outputScript library="js" name="sidebar.js" />
+
+	</ui:define>
+
+	<!-- navbar -->
+	<ui:define name="header">
+		<div class="nav-bar">
+			<div class="title">SimpleKanban</div>
+		</div>
+	</ui:define>
+
+	<!-- main content -->
+	<ui:define name="main">
+		<div class="side-bar">
+			<div class="opcs-icon">
+				<div class="opc-icon">
+					<h:graphicImage id="BtnMax" library="img" name="resize.png" />
+				</div>
+				<div class="opc-icon">
+					<h:graphicImage library="img" name="addTask.png" />
+				</div>
+				
+
+			</div>
+			<div id="SideBarTxt" class="opcs-txt-hide">
+				<div class="opc-txt" style="cursor:default;"></div>
+				<div class="opc-txt">Create Task</div>
+
+			</div>
+		</div>
+
+		<div class="container-geral"></div>
+	</ui:define>
+
+	<!-- footer -->
+	<ui:define name="footer">
+
+	</ui:define>
+
+
+
+</ui:composition>
